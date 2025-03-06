@@ -24,8 +24,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 0;
-    padding-left: 20px;
-}
+    }
 
 .red-line {
     position: fixed;
@@ -46,9 +45,6 @@ body {
     width: 120px;
     cursor: pointer;
     position: relative;
-    padding-left: 15px;
-    padding-right: 15px;
-    marging-left: 10px;
 }
 
 .bubble a {
