@@ -41,7 +41,7 @@ body {
 /* Vertical red line separating the left margin from content */
 .red-line {
     position: fixed;
-    left: 170px;
+    left: 200px;
     top: 0;
     height: 100%;
     width: 5px;
