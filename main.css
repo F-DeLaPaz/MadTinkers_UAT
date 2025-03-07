@@ -80,8 +80,8 @@ body {
 
 /* Main content area (better readability and notepad effect) */
 .content {
-    margin-left: 190px;
-    padding: 40px; /* Added padding for better spacing */
+    margin-left: 250px;
+    padding: 20px; /* Added padding for better spacing */
     font-size: 18px;
     line-height: 1.6;
     background: rgba(255, 255, 255, 0.85); /* Soft white with slight opacity */
