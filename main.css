@@ -6,6 +6,9 @@ body {
     background-size: 30px 30px;
     margin: 0;
     font-family: 'Handlee', cursive; /* Handwritten font for notebook effect */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the page takes full height */
 }
 
 /* Title styling */
@@ -73,6 +76,7 @@ body {
     margin-left: 190px; /* Adjusted so content does not touch the red line */
     padding: 20px;
     font-size: 18px;
+    flex: 1; /* Pushes footer to the bottom */
 }
 
 /* Footer section with a top border */
@@ -81,8 +85,8 @@ body {
     font-size: 14px;
     color: gray;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
     width: 100%;
     border-top: 5px solid black;
+    position: relative; /* Ensures it only sits at the bottom naturally */
+    margin-top: auto; /* Pushes it down when there isn't enough content */
 }
