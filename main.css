@@ -78,19 +78,42 @@ body {
     display: block;
 }
 
-/* Main content area (proper positioning) */
+/* Main content area - Notepad effect */
 .content {
-    margin-left: 220px; /* Push content right so it doesn’t go under sidebar */
+    margin-left: auto; /* Centers content */
+    margin-right: auto; /* Centers content */
     padding: 40px;
     font-size: 18px;
     line-height: 1.6;
-    background: rgba(255, 255, 255, 0.85); /* Soft white with slight opacity */
-    border-radius: 10px; /* Soft edges */
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle depth */
-    max-width: 900px; /* Keeps it from stretching too wide */
-    margin-right: auto;
+    background: rgba(255, 255, 255, 0.95); /* Slightly solid white for contrast */
+    border-radius: 10px; /* Soft rounded edges */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
+    max-width: 800px; /* Narrows the content area */
     padding-bottom: 60px; /* Prevents overlap with footer */
+    position: relative;
 }
+
+/* Optional: "Pinned Note" effect at the top of the notepad */
+.content::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0) 70%);
+    border-radius: 50%;
+    transform: translateX(-50%);
+}
+/* Remove the above section if you don't want the pinned paper effect */
+
+/* Optional: Slight tilt effect for natural look */
+@media screen and (min-width: 768px) {
+    .content {
+        transform: rotate(-2deg); /* Slight tilt */
+    }
+}
+/* Remove the above section if you want the paper to stay straight */
 
 /* Footer section (fixed at bottom & centered properly) */
 .footer {
@@ -103,6 +126,6 @@ body {
     position: fixed; /* Keeps footer at bottom of viewport */
     bottom: 0;
     left: 0;
-    /*background: rgba(255, 255, 255, 0.9); /* Keeps footer visible against background */
+    background: rgba(255, 255, 255, 0.9); /* Keeps footer visible against background */
     box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Adds slight shadow for separation */
 }
