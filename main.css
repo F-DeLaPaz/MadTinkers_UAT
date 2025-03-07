@@ -80,8 +80,8 @@ body {
 
 /* Main content area - Notepad effect */
 .content {
-    margin-left: auto; /* Centers content */
-    margin-right: auto; /* Centers content */
+    margin-left: 220px; /* Ensures it starts to the right of the red line */
+    margin-right: auto; /* Keeps it centered */
     margin-top: 15px; /* Moves the notepad down so tilt doesn’t go above title */
     padding: 40px;
     font-size: 18px;
@@ -89,7 +89,7 @@ body {
     background: rgba(255, 255, 255, 0.95); /* Slightly solid white for contrast */
     border-radius: 10px; /* Soft rounded edges */
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* 3D shadow effect */
-    width: calc(100% - 260px); /* Ensures it stays within available space */
+    width: calc(100% - 260px); /* Makes sure it stays within available space */
     max-width: 800px; /* Prevents it from getting too wide */
     min-width: 500px; /* Prevents it from shrinking too much */
     padding-bottom: 60px; /* Prevents overlap with footer */
