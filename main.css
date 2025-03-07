@@ -82,6 +82,7 @@ body {
 .content {
     margin-left: auto; /* Centers content */
     margin-right: auto; /* Centers content */
+    margin-top: 15px; /* Moves the notepad down so tilt doesn’t go above title */
     padding: 40px;
     font-size: 18px;
     line-height: 1.6;
