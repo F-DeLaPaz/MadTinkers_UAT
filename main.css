@@ -89,4 +89,20 @@ body {
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle depth */
     max-width: 900px; /* Keeps it from stretching too wide */
     margin-right: auto;
+    padding-bottom: 60px; /* Prevents overlap with footer */
+}
+
+/* Footer section (fixed at bottom & centered properly) */
+.footer {
+    text-align: center;
+    font-size: 14px;
+    color: gray;
+    padding: 10px;
+    width: 100%;
+    border-top: 5px solid black; /* Ensures top border is visible */
+    position: fixed; /* Keeps footer at bottom of viewport */
+    bottom: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.9); /* Keeps footer visible against background */
+    box-shadow: 0px -3px 10px rgba(0, 0, 0, 0.1); /* Adds slight shadow for separation */
 }
