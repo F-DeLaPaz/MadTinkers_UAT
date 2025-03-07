@@ -31,7 +31,7 @@ body {
 
 /* Sidebar navigation (now scrolls with the page) */
 .sidebar {
-    position: absolute; /* Allows scrolling */
+    position: fixed; /* Keeps sidebar in place */
     left: 10px;
     top: 60px;
     width: 150px;
@@ -51,7 +51,7 @@ body {
     background-color: red;
 }
 
-/* Navigation bubbles (reduced to 80% size) */
+/* Navigation bubbles */
 .bubble {
     background-color: white;
     border-radius: 50px;
@@ -78,29 +78,15 @@ body {
     display: block;
 }
 
-/* Main content area (better readability and notepad effect) */
+/* Main content area (proper positioning) */
 .content {
-    margin-left: 250px;
-    padding: 20px; /* Added padding for better spacing */
+    margin-left: 220px; /* Push content right so it doesn’t go under sidebar */
+    padding: 40px;
     font-size: 18px;
     line-height: 1.6;
     background: rgba(255, 255, 255, 0.85); /* Soft white with slight opacity */
     border-radius: 10px; /* Soft edges */
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1); /* Subtle depth */
-    flex: 1;
     max-width: 900px; /* Keeps it from stretching too wide */
     margin-right: auto;
-    margin-left: auto; /* Centers the content */
-}
-
-/* Footer section (anchored at bottom properly) */
-.footer {
-    text-align: center;
-    font-size: 14px;
-    color: gray;
-    padding: 10px;
-    width: 100%;
-    border-top: 5px solid black;
-    position: relative;
-    margin-top: auto;
 }
