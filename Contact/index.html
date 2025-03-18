@@ -30,8 +30,8 @@
             <img src="Images/logo.png" alt="MadTinker Logo" style="max-width: 200px;">
         </div>
 
-        <!-- Contact Form -->
-        <form action="mailto:mad.tinkers.workshop@outlook.com" method="post" enctype="text/plain" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;">
+        <!-- Secure Contact Form (Formspree Integration) -->
+        <form action="https://formspree.io/f/xyzezldw" method="POST" style="display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto;">
             <label for="email"><strong>Your Email:</strong></label>
             <input type="email" id="email" name="email" required style="padding: 8px; font-size: 16px; border-radius: 5px;">
 
@@ -41,12 +41,13 @@
             <label for="message"><strong>Message:</strong></label>
             <textarea id="message" name="message" rows="6" required style="padding: 10px; font-size: 16px; border-radius: 5px;"></textarea>
 
+            <input type="hidden" name="_subject" value="New message from MadTinker Contact Form">
+
             <button type="submit" style="padding: 10px 20px; font-size: 16px; font-weight: bold; background-color: #003366; color: white; border: none; border-radius: 8px; cursor: pointer;">
                 Send Message
             </button>
         </form>
 
-        <!-- Optional QR Code for Digital Business Card -->
         <h3 style="margin-top: 40px;">Download My Digital Business Card</h3>
         <div style="text-align: center;">
             <img src="Images/Mad_TinkersQR.png" alt="Scan to download business card" style="max-width: 200px;">
