@@ -55,11 +55,12 @@
     </div>
 
     <div class="footer">
-        Published on: <span id="pub-date"></span> | Author: MadTinker
+        Published on: <strong>3/17/25</strong> | Last Updated: <span id="update-date"></span> | Author: MadTinker
     </div>
 
     <script>
-        document.getElementById("pub-date").textContent = new Date().toLocaleDateString();
+        // Auto-updating "Last Updated" date
+        document.getElementById("update-date").textContent = new Date().toLocaleDateString();
     </script>
 </body>
 </html>
