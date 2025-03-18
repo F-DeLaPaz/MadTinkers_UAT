@@ -16,7 +16,6 @@
     <!-- Sidebar Navigation -->
     <div class="sidebar">
         <div class="bubble"><a href="index.html">Home</a></div>
-       
     </div>
 
     <!-- Red Line -->
@@ -28,12 +27,22 @@
 
         <h3>Innovation Claim</h3>
         <p>
-            [Insert your concise innovation claim here — what makes your project new, inventive, or a unique solution.]
+            P.A.W.S. (Pet Activity & Waste Surveillance) is an innovative AI-powered recognition system designed to detect,
+            log, and communicate real-time pet waste events. Unlike traditional cleanup methods or basic surveillance tools,
+            P.A.W.S. uses posture recognition, thermal imaging, and environmental mapping to transform waste detection into
+            actionable data — eliminating manual spotting and enabling smarter, more efficient pet waste management.
         </p>
 
         <h3>Project Description</h3>
         <p>
-            [Describe your SIP in detail. What problem does it solve? How did you develop the concept? What makes it effective or forward-thinking?]
+            P.A.W.S. was developed to solve a common but often overlooked problem — inefficient pet waste management.
+            Manual spotting is unreliable and time-consuming, especially for individuals with mobility challenges or large
+            outdoor spaces. This system uses AI posture recognition, thermal imaging, and infrared sensors to detect pet
+            waste events as they happen. Each detection is time- and location-stamped using a camera-based mapping grid,
+            allowing the system to record pet behavior and hygiene patterns digitally. Notifications are then sent to the
+            pet owner, providing real-time actionable insights without constant manual monitoring. The concept was developed
+            through the SIP311 Innovation Project by focusing on detection and communication technologies rather than robotic
+            cleanup, allowing for a more targeted, scalable, and effective solution.
         </p>
 
         <h3>Concept Art & Blueprints</h3>
@@ -71,5 +80,9 @@
     <div class="footer">
         Published on: <span id="pub-date"></span> | Author: MadTinker
     </div>
+
+    <script>
+        document.getElementById("pub-date").textContent = new Date().toLocaleDateString();
+    </script>
 </body>
 </html>
